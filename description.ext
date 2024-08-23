@@ -2,7 +2,8 @@ author			= "Checkers";
 onLoadName		= "Training";
 onLoadMission	= "General Training Map of 6MD";
 loadScreen		= "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
-//enableDebugConsole = 1;
+//							Chilla55			Checkers
+enableDebugConsole[] = {"76561198113197862", "76561198062644621"};
 
 respawn = 3;
 respawnDelay = 10;

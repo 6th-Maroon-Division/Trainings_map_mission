@@ -5,19 +5,18 @@
 
 // init Formations Screen
 
-screen_formations addAction ["Clear","screen_formations setObjectTexture [0,'']"];
-screen_formations addAction ["360","screen_formations setObjectTexture [0,'images\360LoF.jpg']"];
-screen_formations addAction ["ColumnFTL","screen_formations setObjectTexture [0,'images\ColumnFTLoF.jpg']"];
-screen_formations addAction ["ColumnSL","screen_formations setObjectTexture [0,'images\ColumnLoF.jpg']"];
-screen_formations addAction ["DiamondFTL","screen_formations setObjectTexture [0,'images\DiamondFTLoF.jpg']"];
-screen_formations addAction ["Echelon","screen_formations setObjectTexture [0,'images\EchelonFTLoF.jpg']"];
-screen_formations addAction ["FiringlineFTL","screen_formations setObjectTexture [0,'images\FiringLineFTLoF.jpg']"];
-screen_formations addAction ["Firingline","screen_formations setObjectTexture [0,'images\FiringLineLoF.jpg']"];
-screen_formations addAction ["StaggeredColumnFTL","screen_formations setObjectTexture [0,'images\StagColumnFTLoF.jpg']"];
-screen_formations addAction ["StagColumn","screen_formations setObjectTexture [0,'images\StagColumnLoF.jpg']"];
-screen_formations addAction ["WedgeFTL","screen_formations setObjectTexture [0,'images\WedgeFTLoF.jpg']"];
-screen_formations addAction ["Wedge","screen_formations setObjectTexture [0,'images\WedgeLoF.jpg']"];
-
+screen_formations addAction ["Clear","screen_formations setObjectTextureGlobal [0,'']"];
+screen_formations addAction ["360","screen_formations setObjectTextureGlobal [0,'images\360LoF.jpg']"];
+screen_formations addAction ["ColumnFTL","screen_formations setObjectTextureGlobal [0,'images\ColumnFTLoF.jpg']"];
+screen_formations addAction ["ColumnSL","screen_formations setObjectTextureGlobal [0,'images\ColumnLoF.jpg']"];
+screen_formations addAction ["DiamondFTL","screen_formations setObjectTextureGlobal [0,'images\DiamondFTLoF.jpg']"];
+screen_formations addAction ["Echelon","screen_formations setObjectTextureGlobal [0,'images\EchelonFTLoF.jpg']"];
+screen_formations addAction ["FiringlineFTL","screen_formations setObjectTextureGlobal [0,'images\FiringLineFTLoF.jpg']"];
+screen_formations addAction ["Firingline","screen_formations setObjectTextureGlobal [0,'images\FiringLineLoF.jpg']"];
+screen_formations addAction ["StaggeredColumnFTL","screen_formations setObjectTextureGlobal [0,'images\StagColumnFTLoF.jpg']"];
+screen_formations addAction ["StagColumn","screen_formations setObjectTextureGlobal [0,'images\StagColumnLoF.jpg']"];
+screen_formations addAction ["WedgeFTL","screen_formations setObjectTextureGlobal [0,'images\WedgeFTLoF.jpg']"];
+screen_formations addAction ["Wedge","screen_formations setObjectTextureGlobal [0,'images\WedgeLoF.jpg']"];
 
 
 // init Teleport flags
@@ -70,6 +69,7 @@ crewTeleportPole addAction ["Base", {
     _this select 1 setPos getmarkerPos "spawnTeleport"
 }];
 
+
 // init AA, AT Training setup
 launcher_training addAction ["Heal", {
     _this select 1 setDamage 0
@@ -104,6 +104,7 @@ pilot_training addAction ["Clear Garbage", {
         deletevehicle _x
     } forEach allDead
 }];
+
 
 // Variables
 spawnMarkersStatic = ["pilotspawn_1", "pilotspawn_2", "pilotspawn_3", "pilotspawn_4", "pilotspawn_5", "pilotspawn_6", "pilotspawn_7", "pilotspawn_8"];
