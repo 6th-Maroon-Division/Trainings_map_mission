@@ -1,0 +1,38 @@
+author			= "Checkers";
+onLoadName		= "Training";
+onLoadMission	= "General Training Map of 6MD";
+loadScreen		= "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
+//enableDebugConsole = 1;
+
+respawn = 3;
+respawnDelay = 10;
+respawnOnStart = -1;
+
+disabledAI = 1; 
+briefingName = "Trainingmap";
+
+class Header
+{
+	gameType =  Zeus;
+};
+
+class CfgFunctions
+{
+	class Checkers
+	{
+		class spawning
+		{
+			class qualificationAA{};
+
+			class qualificationAT{};
+
+			class spawnConvoy{};
+			
+			class spawnConvoyAA{};
+
+			class spawnStaticGroup{};
+
+			class spawnCalloutUnit{};
+		};
+	}
+}
